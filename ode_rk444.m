@@ -1,8 +1,5 @@
 function [t, u] = ode_rk444(odefun, tspan, y0, Nh, varargin)
-% Usage: [t, u] = ode_rk33(odefun, tspan, y0, Nh, varargin)
-%
-% Copyrighted by Tao Lin, 10/2014
-% prepare the parameters in this rk33 method:
+
 a21=1/2; a32 = 1/2; a43 = 1;
 b1=1/6; b2=1/3; b3=1/3; b4 = 1/6;
 c2 = 1/2; c3 = 1/2; c4 = 1;
